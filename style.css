@@ -1,0 +1,287 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+.profile-logo{
+    float: left;
+}
+
+#header-container{
+    width: 100%;
+    height: 60px;
+    padding-left: 35px;
+    margin: 0 auto;
+    position: fixed;
+    background-color: #fff;
+    transform: translateY(-100%);
+    transition: 0.5s;
+    z-index: 10;
+}
+
+#header-container.active{
+    transform: none;
+}
+
+.header-right li{
+    list-style: none;
+    float:right;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.header-right a{
+    text-decoration: none;
+    color: #000;
+}
+
+.header-right a:hover{
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.profile-logo img{
+    width: 120px;
+    margin-top: 10px;
+}
+
+.main-image{
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.main-image .bgImg{
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    bottom     : 0;
+    right      : 0;
+    opacity    : 0;
+    animation  : bgAnime 20s infinite;
+}
+
+.main-image .src1{
+    background-image:url(images/mainvisual.jpg);
+    background-size: cover;
+}
+
+.main-image .src2{
+    background-image: url(images/dmitrii-vaccinium-sw9Vozf6j_4-unsplash.jpg);
+    animation-delay: 5s;
+    background-size: cover;
+}
+
+.main-image .src3{
+    background-image: url(images/patrick-hendry-1ow9zrlldJU-unsplash.jpg);
+    animation-delay: 10s;
+    background-size: cover;
+}
+
+.main-image .src4{
+    background-image: url(images/robert-bye-tG36rvCeqng-unsplash.jpg);
+    animation-delay: 15s;
+    background-size: cover;
+}
+
+@keyframes bgAnime {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+   25% { opacity: 1; }
+   30% { opacity: 0; }
+  100% { opacity: 0; }
+ }
+
+
+.main-container{
+    max-width: 860px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contens-title{
+    margin-top: 100px;
+    margin-bottom: 65px;
+}
+
+.contens-title h1{
+    font-size: 32px;
+    border-bottom: 1px solid #000;
+    margin: 0 43.5%;
+    padding-bottom: 7px;
+    opacity: 0;
+}
+
+@keyframes aboutanimation{
+    0%{
+        letter-spacing: .3em;
+        opacity: 0;
+    }
+}
+
+.anime{
+    animation: aboutanimation 1.5s;
+    opacity: 1 !important;
+}
+
+
+
+.about-profile{
+    margin-left: 170px;
+}
+
+.profile-text{
+    float: right;
+    margin-right: 150px;
+}
+
+.profile-text h2{
+    display: flex;
+    margin: 10px 0;
+}
+
+.profile-text p{
+    font-size: 14.4px;
+    line-height: 21px;
+}
+
+.about-profile img{
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 1s all;
+}
+
+.about-profile img:hover{
+    transform:scale(1.2,1.2) ;
+    transition:1s all;
+}
+
+.bicycle-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.bicycle-contens{
+    width: 32%;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
+}
+
+.bicycle-contens.show{
+    opacity: 1;
+    transform: none;
+}
+
+.bicycle-contens img{
+    width: 100%;
+}
+
+.bicycle-contens h3{
+    margin: 15px 0;
+}
+
+.footer-text{
+    text-align: center;
+    font-size: 10px;
+}

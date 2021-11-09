@@ -1,0 +1,54 @@
+@media(max-width:1000px){
+
+  #header-container{
+    padding-left: 15px;
+    height: 35px;
+  }
+
+  .profile-logo img{
+    width: 70px;
+    margin-top: 6px;
+  }
+
+  .header-right li{
+    margin-right: 32px;
+    margin-top: 11px;
+    font-size: 14px;
+  }
+
+  .main-image{
+    height: 300px;
+  }
+
+  .contens-title h1{
+    margin: 0 31.5%;
+  }
+
+  .about-profile{
+    text-align: center;
+    margin-left: auto;
+  }
+
+  .about-profile img{
+    width: 200px;
+  }
+
+  .profile-text{
+    text-align: center;
+    margin: 50px 6%;
+  }
+
+  .profile-text p{
+    font-size: 11.4px;
+  }
+
+  .bicycle-wrapper{
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .bicycle-contens{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
